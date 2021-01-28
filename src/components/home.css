@@ -1,0 +1,10 @@
+.home{
+  display: flex;
+  justify-content: space-around;
+}
+body{
+  /* border:1px solid red */
+}
+input{
+  margin: 10px;
+}
