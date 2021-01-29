@@ -39,7 +39,7 @@ function Home(props) {
     });
     console.log(result)
     if(result){
-      alert("loggedin")
+      // alert("loggedin")
       props.loggedinuser(result)
       history.push('/index');
     }else{
