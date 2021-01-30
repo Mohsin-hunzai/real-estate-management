@@ -26,6 +26,7 @@ function Home(props) {
     );
   }, []);
 
+
   useEffect(() => {
     localStorage.setItem("userData", JSON.stringify(userData));
   }, [userData]);
@@ -39,9 +40,9 @@ function Home(props) {
     });
     console.log(result)
     if(result){
-      // alert("loggedin")
-      props.loggedinuser(result)
-      history.push('/index');
+      localStorage.setItem("loggedInUserId",result.id)
+      props.loggedInUser(result)
+      history.push('/homes');
     }else{
       alert("Incorrect Email or Password")
     }

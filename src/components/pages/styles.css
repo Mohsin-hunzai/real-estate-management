@@ -12,7 +12,7 @@
 }
 
 .dashboards{
-    height: 100vh;
+    height: 90vh;
     background-image: url("./slider-image.jpg");
 }
 .contactus{
@@ -25,7 +25,7 @@
   input[type=text], select, textarea {
     width: 80%;
     padding: 12px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 4px;
     resize: vertical;
   }
@@ -43,6 +43,9 @@
     border-radius: 4px;
     cursor: pointer;
     float: right;
+  }
+  .index-slider{
+    text-transform: uppercase;
   }
   
   input[type=submit]:hover {
@@ -136,8 +139,10 @@
   border: none;
   transition: 200ms;
 }
-.house-data{
-  border: solid ;
+.house-data{  
+  margin-top: 30px;
+  border: 1px solid;
+  border-radius: 2%;
   display: flex;
 }
 .house-data .dropdown{
@@ -195,5 +200,15 @@
 .cardsContainer{
  display: flex;
  flex-wrap: wrap;
+ margin-top: 30px;
+ /* margin-bottom: 30px; */
  justify-content: space-around;
+}
+
+.show{
+  background-color: red;
+  border: solid rgb(236, 229, 229) 1px;
+  width: 20%;
+  float: right;
+  display: none;
 }

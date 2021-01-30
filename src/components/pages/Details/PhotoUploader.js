@@ -36,7 +36,6 @@ function PhotoUploader(props) {
         }}
       />
       <img src={BaseImage} width="110px;" border-radius="60px" margin="auto" />
-      <button onSubmit={handleSubmit}>save Image</button>
      
     </div>
   );

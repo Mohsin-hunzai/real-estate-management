@@ -2,14 +2,15 @@ import React, { useState,useEffect } from "react";
 import "./styles.css";
 import Navbar from "../layout/Navbar";
 import AddHouse from "./Details/AddNewHouse";
-import Cards from './cards.js'
+import Cards from './cards.js';
+import Popup from "../layout/popup"
 
 function User(props) {
   const [show, setshow] = useState(false);
   const [data,setData]=useState([])
   function userCreatedData(inputData){
     setData([...data,inputData])
-  }
+  } 
   useEffect(()=>{
     setData(
       JSON.parse(localStorage.houseData || "[]")
@@ -33,7 +34,7 @@ function User(props) {
   };
 
   const cardsList= data.map((element)=>{
-    return(<Cards house={element.house} location={element.location}></Cards>)
+    return(<Cards house={element.house} location={element.location} price={element.price} image={element.image} ></Cards>)
   })
 
   return (
@@ -41,9 +42,10 @@ function User(props) {
       <Navbar loggedinuserdata={props.loggedinuserdata} />
       <div className="main-container">
         <div className="index-slider">
-          <h1>find your best property</h1>
+          {/* <h1>find your best property</h1> */}
 
           <div className="content">
+            <Popup/>
             <div className="property-area">
               <form action="">
                 <p>Add house details</p>
@@ -68,7 +70,6 @@ function User(props) {
           <h1>{props.loggedinuserdata.pass}</h1>
           <h1>{props.loggedinuserdata.email}</h1>
           <h1>{props.loggedinuserdata.age}</h1>
-          <p>asd</p>
         </div>
       </div>
     </section>
