@@ -30,7 +30,7 @@ function App(props) {
       <Route exact path="/Aboutus" component={Aboutus} />
         <Route path="/Contactus" component={ContactUs} />
     </Router>
-  );
+  ); 
 }
 
 export default App;
