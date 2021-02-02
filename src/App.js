@@ -3,6 +3,7 @@ import Home from './components/home'
 import Index from './components/pages/index'
 import Aboutus from './components/pages/aboutUs'
 import ContactUs from './components/pages/ContactUs'
+import AddProfile from './components/layout/AddProfile'
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 

@@ -3,7 +3,6 @@ import "./styles.css";
 import Navbar from "../layout/Navbar";
 import AddHouse from "./Details/AddNewHouse";
 import Cards from './cards.js';
-import Popup from "../layout/popup"
 
 function User(props) {
   const [show, setshow] = useState(false);
