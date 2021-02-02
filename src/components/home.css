@@ -8,3 +8,10 @@ body{
 input{
   margin: 10px;
 }
+.home{
+  background-image: url("./layout/bg.jpg");
+  
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

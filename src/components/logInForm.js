@@ -32,7 +32,7 @@ function LogInForm(props) {
         onChange={handleChange}
       />
       <button onClick={handleSubmit} className="continueButton">
-        Continue
+        Log In
       </button>
       </div>
     </Aux>

@@ -12,7 +12,7 @@
 }
 
 .dashboards{
-    height: 100vh;
+    height: 90vh;
     background-image: url("./slider-image.jpg");
 }
 .contactus{
@@ -25,7 +25,7 @@
   input[type=text], select, textarea {
     width: 80%;
     padding: 12px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 4px;
     resize: vertical;
   }
@@ -43,6 +43,9 @@
     border-radius: 4px;
     cursor: pointer;
     float: right;
+  }
+  .index-slider{
+    text-transform: uppercase;
   }
   
   input[type=submit]:hover {
@@ -79,3 +82,133 @@
       margin-top: 0;
     }
   }
+
+  .content {
+    z-index: -1;
+    
+    background-color: white;
+  }
+  
+.property-area {
+  width: 100%;
+  margin: auto;
+  background-color: #3d3d3d;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.taskButtons {
+  margin:  auto;
+  background-color: #3d3d3d;
+  border-radius: 10px;
+}
+.property-area .details{
+  width: 150px;
+}
+.property-area input {
+  width: 150px;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: #646464dc;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  transition: 100ms;
+}
+.property-area input:hover {
+  color: black;
+  font-weight: lighter;
+  background-color: white;
+}
+.property-area button {
+  margin: 0.5rem;
+  margin-top: 2.5rem;
+  padding: 0.5rem 0rem;
+  width: 6rem;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  background: none;
+  font-size: medium;
+}
+.property-area .add-house {
+  background-color: rgb(96, 43, 182);
+  border: none;
+  transition: 200ms;
+}
+.house-data{  
+  margin-top: 30px;
+  border: 1px solid;
+  border-radius: 2%;
+  display: flex;
+}
+.house-data .dropdown{
+  margin-top: 8px;
+  width: 140px;
+  height: 40px;
+  font-size: 15px;
+  padding: 0.5rem;
+  margin-left: 6px;
+  margin-right: 6px;
+  background-color: #646464dc;
+  font-weight: lighter;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  transition: 100ms;
+}
+.house-data .dropdown:hover{
+  color: black;
+  font-weight: lighter;
+  background-color: white;
+}
+.house-data input{
+  height: 40px;
+}
+.house-data .AddHome{
+  margin-top: 6px;
+  height: 41px;
+  padding: 0.5rem;
+  background-color: #646464dc;
+  font-weight: lighter;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  transition: 250ms;
+  margin-left: 40px;
+
+}
+.house-data .AddHome:hover{
+  margin-top: 6px;
+  height: 41px;
+  color: black;
+  font-weight: lighter;
+  background-color: white;
+
+}
+.photupload .choseimage {
+  height: 40px;
+  width: 113px;
+}
+.house-details-cards{
+  width:390px ;
+}
+.cardsContainer{
+ display: flex;
+ flex-wrap: wrap;
+ margin-top: 30px;
+ /* margin-bottom: 30px; */
+ justify-content: space-around;
+}
+
+.show{
+  background-color: red;
+  border: solid rgb(236, 229, 229) 1px;
+  width: 20%;
+  float: right;
+  display: none;
+}
