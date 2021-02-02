@@ -209,3 +209,11 @@
   height: 238px;
     width: 21rem;
 }
+.buyBtn{
+  border: solid;
+  
+}
+.buyBtn:hover{
+  cursor: pointer;
+
+}

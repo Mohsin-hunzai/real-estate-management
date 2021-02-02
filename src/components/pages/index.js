@@ -22,7 +22,7 @@ function User(props) {
 
   let showItem = null;
   if (show === true) {
-    showItem = <AddHouse userCreatedData={userCreatedData}/>;
+    showItem = <AddHouse  loggedInUserData={props.loggedInUserData}userCreatedData={userCreatedData}/>;
   }
 
   const handleShowItem = (e) => {
@@ -32,14 +32,13 @@ function User(props) {
   };
 
   const cardsList= data.map((element)=>{
-    return(<Cards house={element.house } list={element.list} location={element.location} price={element.price} image={element.data} ></Cards>)
+    return(<Cards house={element.house } email={element.email} id={element.id} loggedInUserData={props.loggedInUserData} list={element.list} location={element.location} price={element.price} image={element.data} ></Cards>)
   })
   return (
     <section className="dashboards ">
       <Navbar loggedInUserData={props.loggedInUserData} />
       <div className="main-container">
         <div className="index-slider">
-          {/* <h1>find your best property</h1> */}
 
           <div className="content">
             <div className="property-area">

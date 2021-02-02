@@ -30,10 +30,10 @@ const Navbar = (props) => {
 
         <div className="nav">
           {/* <a href="/index">Home</a> */}
-          <Link to="./homes">Home</Link>
+          <Link to="./homes?id=2sd4zs">Home</Link>
 
-          <Link to="./AboutUs">About Us</Link>
-          <Link to="./ContactUs">Contact Us</Link>
+          <Link to="./AboutUs?id:4r89hsd">About Us</Link>
+          <Link to="./ContactUs?id:34rdgru">Contact Us</Link>
         </div>
         <div className="profile">
         {/* <h1 className="profiledetails" onClick={pro}>{props.loggedInUserData.name}</h1> */}

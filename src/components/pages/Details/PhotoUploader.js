@@ -10,14 +10,7 @@ function PhotoUploader(props) {
       props.handleData(fileReader.result);
       setBaseImage(fileReader.result);
     };
-    // fileReader.onerror = (error) => {
-    //   throw new Error(errpr)
-    // };
   };
-  // const handleImageData = (e) => {
-  //   e.preventDefault();
-  //   props.pushingDataHandler(BaseImage);
-  // };
   return (
     <div id="App">
       <input
@@ -27,7 +20,7 @@ function PhotoUploader(props) {
           uploadImage(e);
         }}
       />
-      <img src={BaseImage} width="110px;" border-radius="60px" margin="auto" />
+      <img src={BaseImage} width="40px;"  border-radius="40px"  />
     </div>
   );
 }

@@ -5,6 +5,7 @@ import PhotoUploader from "./PhotoUploader"
 import Popup from "../../layout/popup"
 
     function AddHouse(props){
+      
       const [inputData , setInputData]=useState({
         house : "",
         price : "",
@@ -19,12 +20,10 @@ import Popup from "../../layout/popup"
       }
 
       const handleChange=(e)=>{
-        setInputData({...inputData , 
-        [e.target.id]:e.target.value
-        })
+        setInputData({...inputData , [e.target.id]:e.target.value,email:props.loggedInUserData.email,id:props.loggedInUserData.id})
       }
       const handleData=(data)=>{
-        setInputData({...inputData , data: data})
+        setInputData({...inputData , data: data })
       }
         return(
           <form onSubmit={handleSubmit}>
@@ -38,7 +37,6 @@ import Popup from "../../layout/popup"
                   <option value="">Town House</option>
                   <option value="">villa</option>
                 </select>
-                <button ></button>
                 <PhotoUploader handleData={handleData}/>
                 <button className="AddHome" onSubmit={handleSubmit}>Add House</button>
               </div>

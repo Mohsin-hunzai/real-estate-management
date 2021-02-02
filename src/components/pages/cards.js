@@ -1,22 +1,37 @@
 import React from "react";
 import "./styles.css";
-import Popup from "../layout/popup"
 
 function Cards (props){
+  // function pro(){
+  
+  //   let a = document.querySelector('.show')
+  //   if(!a.style.display){
+  //     a.style.display = "block"
+      
+  //   }else{
+  //     a.style.display = ""
+  //   }
+  // }
+  // if(props.loggedInUserData.id==""){
+
+  // }
+
     return(
         <div className="house-details-cards">
         <div class="card"> 
           <img src="" />
-          <div class="container"> <Popup/>
+          <div class="container"> 
             <img className="cardsImage" src={props.image}></img>
-            {/* <h1>Image :{props.image}</h1> */}
             <h4>
               <b>House Name : {props.house}</b>
             </h4>
-            <p>Pulisher Name :{props.name}</p>
+            <p>Pulisher Email :{props.email}</p>
             <p >Location : {props.location}</p>
             <p>Price :{props.price}</p>
-            <button >Buy</button>
+            <p>current user </p>
+            <p>email : {props.id}</p>
+            <p className="show"> { props.loggedInUserData.id}</p>
+            <button  className="buyBtn">Buy</button>
           </div>
         </div>
       </div>
