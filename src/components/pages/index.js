@@ -69,7 +69,7 @@ function User(props) {
           <h1>{props.loggedinuserdata.name}</h1>
           <h1>{props.loggedinuserdata.pass}</h1>
           <h1>{props.loggedinuserdata.email}</h1>
-          <h1>{props.loggedinuserdata.age}</h1>
+          <h1>{props.loggedinuserdata.email}</h1>
         </div>
       </div>
     </section>

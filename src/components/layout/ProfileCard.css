@@ -1,0 +1,20 @@
+
+.profileCardContainer{
+    width:390px ; 
+    box-sizing: border-box;
+}
+.profileCard{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    margin-top: 40px;
+    justify-content: space-around;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+}
+
+.userHeanding{
+    font-size: 20px;
+   
+}

@@ -32,9 +32,10 @@ const Navbar = (props) => {
 
           <Link to="./AboutUs">About Us</Link>
           <Link to="./ContactUs">Contact Us</Link>
+          <Link to="./AddProfile">Users Profile</Link>
         </div>
         <div className="profile">
-          <h1>{props.loggedinuserdata.name}</h1>
+          {/* <h1>{props.loggedinuserdata.name}</h1> */}
           {/* <h1 >user Name</h1> */}
           <button onClick={pro}>check</button>
           <button  onClick={LogOut}className="logoutBtn"  >

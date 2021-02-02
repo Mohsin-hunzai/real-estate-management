@@ -13,7 +13,6 @@ function Cards (props){
             </h4>
             <p>Location : {props.location}</p>
             <p>Price :{props.price}</p>
-            <button>Buy</button>
           </div>
         </div>
       </div>
