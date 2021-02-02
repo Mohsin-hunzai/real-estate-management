@@ -3,7 +3,7 @@ import "./styles.css";
 import Navbar from "../layout/Navbar";
 import { Button, Form } from "react-bootstrap";
 
-const Contactus = () => {
+const Contactus = (props) => {
   let styles = {
     marginTop: "50px",
     border: "solid",
@@ -18,7 +18,7 @@ const Contactus = () => {
 
   return (
     <div className="dashboards ">
-      <Navbar />
+      <Navbar  loggedInUserData={props.loggedInUserData} />
       <div className="main-container contactus">
         <Form>
           <div class="row">

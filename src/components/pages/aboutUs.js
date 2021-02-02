@@ -2,10 +2,10 @@ import React from "react";
 import "./styles.css";
 import Navbar from "../layout/Navbar";
 
-const Aboutus = () => {
+const Aboutus = (props) => {
   return (
     <div className=" dashboards">
-      <Navbar />
+      <Navbar loggedInUserData={props.loggedInUserData} />
       <div className="main-container">
         <h1>here is about-Us page</h1>
         <p>

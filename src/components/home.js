@@ -33,12 +33,9 @@ function Home(props) {
 
   //  checking login data from local storage 
   function checkName(data) {
-    console.log(userData)
-    console.log(data)
     let result = userData.find((element) => {
       return (element.email === data.email && element.pass === data.pass)
     });
-    console.log(result)
     if(result){
       localStorage.setItem("loggedInUserId",result.id)
       props.loggedInUser(result)

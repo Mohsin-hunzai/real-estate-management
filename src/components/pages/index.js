@@ -20,8 +20,6 @@ function User(props) {
     localStorage.setItem("houseData",JSON.stringify(data))
   },[data])
 
-  console.log(data)
-  console.log(props.loggedinuserdata);
   let showItem = null;
   if (show === true) {
     showItem = <AddHouse userCreatedData={userCreatedData}/>;
@@ -34,18 +32,16 @@ function User(props) {
   };
 
   const cardsList= data.map((element)=>{
-    return(<Cards house={element.house} location={element.location} price={element.price} image={element.image} ></Cards>)
+    return(<Cards house={element.house } list={element.list} location={element.location} price={element.price} image={element.data} ></Cards>)
   })
-
   return (
     <section className="dashboards ">
-      <Navbar loggedinuserdata={props.loggedinuserdata} />
+      <Navbar loggedInUserData={props.loggedInUserData} />
       <div className="main-container">
         <div className="index-slider">
           {/* <h1>find your best property</h1> */}
 
           <div className="content">
-            <Popup/>
             <div className="property-area">
               <form action="">
                 <p>Add house details</p>
@@ -66,10 +62,10 @@ function User(props) {
               <div className="cardsContainer">
               {cardsList}
               </div>
-          <h1>{props.loggedinuserdata.name}</h1>
-          <h1>{props.loggedinuserdata.pass}</h1>
-          <h1>{props.loggedinuserdata.email}</h1>
-          <h1>{props.loggedinuserdata.age}</h1>
+          <h1>{props.loggedInUserData.name}</h1>
+          <h1>{props.loggedInUserData.pass}</h1>
+          <h1>{props.loggedInUserData.email}</h1>
+          <h1>{props.loggedInUserData.id}</h1>
         </div>
       </div>
     </section>

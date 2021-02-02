@@ -205,10 +205,7 @@
  justify-content: space-around;
 }
 
-.show{
-  background-color: red;
-  border: solid rgb(236, 229, 229) 1px;
-  width: 20%;
-  float: right;
-  display: none;
+.cardsImage{
+  height: 238px;
+    width: 21rem;
 }

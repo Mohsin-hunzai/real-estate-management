@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./signupform.css"
 import Aux from "../hoc/auxiliary";
+import PhotoUploader from "../components/pages/Details/PhotoUploader"
 
 function SignUpForm(props) {
   const [user, setUser] = useState({
@@ -23,6 +24,9 @@ function SignUpForm(props) {
   }
   function handleChange(e) {
     setUser({ ...user, [e.target.id]: e.target.value, id:Math.random().toString(36).substring(7) });
+  }
+  const handleData=(data)=>{
+    setUser({...user   , data})
   }
   return (
     <Aux>
@@ -58,6 +62,7 @@ function SignUpForm(props) {
           type="password"
           onChange={handleChange}
         />
+          <PhotoUploader  handleData={handleData}/>
         <button onClick={HandleSubmit} className="continueButton">
           Continue
         </button>

@@ -1,19 +1,22 @@
 import React from "react";
-import images from "./slider-image.jpg";
+import "./styles.css";
+import Popup from "../layout/popup"
 
 function Cards (props){
     return(
         <div className="house-details-cards">
-        <div class="card">
+        <div class="card"> 
           <img src="" />
-          <div class="container">
-            <img src={props.image}></img>
+          <div class="container"> <Popup/>
+            <img className="cardsImage" src={props.image}></img>
+            {/* <h1>Image :{props.image}</h1> */}
             <h4>
-              <b>Houe Name : {props.house}</b>
+              <b>House Name : {props.house}</b>
             </h4>
-            <p>Location : {props.location}</p>
+            <p>Pulisher Name :{props.name}</p>
+            <p >Location : {props.location}</p>
             <p>Price :{props.price}</p>
-            <button>Buy</button>
+            <button >Buy</button>
           </div>
         </div>
       </div>
