@@ -81,3 +81,27 @@ box-shadow: 1px 13px 12px -4px rgba(32, 23, 116, 0.79);
   background-color: #bcccff77;
   transform: scale(1.1);
 }
+.alpha{
+  opacity: 0.4;
+}
+.show{
+  box-shadow:0px 7px 23px 7px #141414;
+  width: 22%;
+  color: aliceblue;
+  text-align: center;
+  display: none;
+  position: absolute;
+  right: 139px;
+  border-radius: 2px;
+  background-color:rgba(52, 52, 52, 0.7);
+}
+
+.profilePhoto{
+  margin-top: 30px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.profilePhoto:hover{
+  cursor: pointer;
+}

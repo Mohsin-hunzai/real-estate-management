@@ -1,14 +1,15 @@
 import React,{useState} from 'react';
 import ProfileCard from './ProfileCard';
 
+console.log({localStorage})
 // const [data,setData]=useState('')
-const array = JSON.parse(localStorage.userData);
+// const array = JSON.parse(localStorage.userData);
 
-console.log(array)
+// console.log(array)
 
-const addCard = array.map((element)=>{
-    return <ProfileCard name={element.name} age={element.age} email={element.email}></ProfileCard>
-})
+// const addCard = array.map((element)=>{
+//     return <ProfileCard name={element.name} age={element.age} email={element.email}></ProfileCard>
+// })
 function AddProfile(props) {
     return (
         <div className="addProfile">

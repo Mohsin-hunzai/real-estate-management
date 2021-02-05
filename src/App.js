@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 function App(props) {
   const [loggedInUserData,setLoggedInUserData]=useState("");
   function loggedInUser(result){
+    console.log(result)
     setLoggedInUserData(result)
   }
   useEffect(()=>{
@@ -27,10 +28,9 @@ function App(props) {
   return (
     <Router>
       <Route path="/" exact component={Home} ><Home loggedInUser={loggedInUser}></Home></Route>
-      <Route path="/Homes" exact component={Index}><Index loggedinuserdata={loggedInUserData}></Index></Route>
-      <Route exact path="/Aboutus" component={Aboutus} />
-      <Route path="/Contactus" component={ContactUs} />
-      <Route path="/AddProfile" component={AddProfile} />
+      <Route path="/Homes" exact component={Index}><Index loggedInUserData={loggedInUserData}></Index></Route>
+      <Route exact path="/Aboutus" component={Aboutus} ><Aboutus loggedInUserData={loggedInUserData}></Aboutus></Route>
+        <Route path="/Contactus" component={ContactUs} ><ContactUs  loggedInUserData={loggedInUserData}></ContactUs></Route>
     </Router>
   ); 
 }
