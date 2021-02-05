@@ -1,0 +1,224 @@
+.main-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(52, 52, 52, 0.7);
+  box-shadow: 0px 1px 21px 11px #141414;
+}
+.index-slider {
+  padding-top: 50px;
+}
+
+.dashboards {
+  height: 90vh;
+  background-image: url("./slider-image.jpg");
+}
+.contactus {
+  margin-top: 30px;
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 80%;
+  padding: 12px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+.index-slider {
+  text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.content {
+  z-index: -1;
+
+  background-color: white;
+}
+
+.property-area {
+  width: 100%;
+  margin: auto;
+  background-color: #3d3d3d;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.taskButtons {
+  margin: auto;
+  background-color: #3d3d3d;
+  border-radius: 10px;
+}
+.property-area .details {
+  width: 150px;
+}
+.property-area input {
+  width: 150px;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: #646464dc;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  transition: 100ms;
+}
+.property-area input:hover {
+  color: black;
+  font-weight: lighter;
+  background-color: white;
+}
+.property-area button {
+  margin: 0.5rem;
+  margin-top: 2.5rem;
+  padding: 0.5rem 0rem;
+  width: 6rem;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  background: none;
+  font-size: medium;
+}
+.property-area .add-house {
+  background-color: rgb(96, 43, 182);
+  border: none;
+  transition: 200ms;
+}
+.house-data {
+  margin-top: 30px;
+  border: 1px solid;
+  border-radius: 2%;
+  display: flex;
+}
+.house-data .dropdown {
+  margin-top: 8px;
+  width: 140px;
+  height: 40px;
+  font-size: 15px;
+  padding: 0.5rem;
+  margin-left: 6px;
+  margin-right: 6px;
+  background-color: #646464dc;
+  font-weight: lighter;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  transition: 100ms;
+}
+.house-data .dropdown:hover {
+  color: black;
+  font-weight: lighter;
+  background-color: white;
+}
+.house-data input {
+  height: 40px;
+}
+.house-data .AddHome {
+  margin-top: 6px;
+  height: 41px;
+  padding: 0.5rem;
+  background-color: #646464dc;
+  font-weight: lighter;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  transition: 250ms;
+  margin-left: 40px;
+}
+.house-data .AddHome:hover {
+  margin-top: 6px;
+  height: 41px;
+  color: black;
+  font-weight: lighter;
+  background-color: white;
+}
+.photupload .choseimage {
+  height: 40px;
+  width: 113px;
+}
+.house-details-cards {
+  width: 390px;
+  text-transform: capitalize;
+}
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  /* margin-bottom: 30px; */
+  justify-content: space-around;
+}
+
+.cardsImage {
+  height: 238px;
+  width: 21rem;
+}
+.buyBtn {
+  border: solid;
+  width: 60px;
+  height: 33px;
+  border-radius: 6px;
+}
+.buyBtn:hover {
+  cursor: pointer;
+}
+.no-btn{
+  height: 30rem;
+}
