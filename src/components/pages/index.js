@@ -29,6 +29,11 @@ function User(props) {
     let items = show;
     setshow(true);
   };
+  const check=(e)=>{
+    e.preventDefault();
+    let items = show;
+    setshow(false);
+  }
 
   const cardsList= data.map((element)=>{
     return(<Cards house={element.house } email={element.email} id={element.id} loggedInUserData={props.loggedInUserData} list={element.list} location={element.location} price={element.price} image={element.data} ></Cards>)
@@ -50,7 +55,7 @@ function User(props) {
                   >
                     Add House
                   </button>
-                  <button className="buy-house details">Buy house</button>
+                  <button onClick={check} className="buy-house details">Buy house</button>
                   <button className="rent-house details">Rent a house</button>
                 </div>
               </form>
