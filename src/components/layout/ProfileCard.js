@@ -9,7 +9,6 @@ function ProfileCard(props) {
             <div className="profileCard">
             <img src={props.data} className="userImg"/>
               <div className="text">
-              
                 <h2 className="userHeading">Name: {props.name}</h2>
                 <p className="userPara"> Age: {props.age} </p>
                 <p className="userPara">Email: {props.email}</p>
