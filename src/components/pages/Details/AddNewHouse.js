@@ -11,6 +11,7 @@ import Popup from "../../layout/popup"
         price : "",
         location : "",
         list:"",
+        idCards: ""
       })
       const dispatch = useDispatch()
       const handleSubmit = (e)=>{
@@ -20,7 +21,7 @@ import Popup from "../../layout/popup"
       }
 
       const handleChange=(e)=>{
-        setInputData({...inputData , [e.target.id]:e.target.value,email:props.loggedInUserData.email,id:props.loggedInUserData.id})
+        setInputData({...inputData , [e.target.id]:e.target.value, idCards:Math.random().toString(36).substring(7) ,email:props.loggedInUserData.email,id:props.loggedInUserData.id})
       }
       const handleData=(data)=>{
         setInputData({...inputData , data: data })

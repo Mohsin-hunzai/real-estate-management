@@ -7,10 +7,14 @@ import { useHistory } from "react-router-dom";
 import Popup from "./popup"
 
 const Navbar = (props) => {
+
   const history = useHistory();
   function LogOut(){
     localStorage.setItem("loggedInUserId","");
     history.push('/');
+  }
+  function getTime(){
+    return (new Date().toLocaleTimeString())
   }
   function pro(){
   
@@ -35,12 +39,11 @@ const Navbar = (props) => {
           <Link to="./AboutUs?id:4r89hsd">About Us</Link>
           <Link to="./ContactUs?id:34rdgru">Contact Us</Link>
         </div>
+        <p></p>
         <div className="profile">
-        {/* <h1 className="profiledetails" onClick={pro}>{props.loggedInUserData.name}</h1> */}
-          {/* <h1>{loggedInUserData.name}</h1> */}
+          <p >{getTime()} </p>
           <img className="profilePhoto"  onClick={pro} src={props.loggedInUserData.data}/>
           {/* <h1 >user Name</h1> */}
-          <h1 ></h1>
           {/* <button onClick={pro}>check</button> */}
           <button  onClick={LogOut} className="logoutBtn"  >
             Log Out

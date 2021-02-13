@@ -3,6 +3,7 @@ import "./styles.css";
 import Navbar from "../layout/Navbar";
 import AddHouse from "./Details/AddNewHouse";
 import Cards from './cards.js';
+import CommentArea from "./CommentArea"
 
 function User(props) {
   const [show, setshow] = useState(false);
@@ -36,7 +37,8 @@ function User(props) {
   }
 
   const cardsList= data.map((element)=>{
-    return(<Cards house={element.house } email={element.email} id={element.id} loggedInUserData={props.loggedInUserData} list={element.list} location={element.location} price={element.price} image={element.data} ></Cards>)
+    return(<Cards house={element.house } idCards={element.idCards} email={element.email} id={element.id} loggedInUserData={props.loggedInUserData} list={element.list} location={element.location} price={element.price} image={element.data} ></Cards>)
+    
   })
   return (
     <section className="dashboards ">
@@ -53,7 +55,7 @@ function User(props) {
                     className="add-house details"
                     onClick={handleShowItem}
                   >
-                    Add House
+                    Add House details
                   </button>
                   <button onClick={check} className="buy-house details">Buy house</button>
                   <button className="rent-house details">Rent a house</button>
@@ -65,10 +67,13 @@ function User(props) {
               <div className="cardsContainer">
               {cardsList}
               </div>
-          <h1>{props.loggedInUserData.name}</h1>
+              {/* <div>
+                <CommentArea/>
+              </div> */}
+          {/* <h1>{props.loggedInUserData.name}</h1>
           <h1>{props.loggedInUserData.pass}</h1>
           <h1>{props.loggedInUserData.email}</h1>
-          <h1>{props.loggedInUserData.id}</h1>
+          <h1>{props.loggedInUserData.id}</h1> */}
         </div>
       </div>
     </section>

@@ -200,6 +200,9 @@ input[type="submit"]:hover {
   width: 390px;
   text-transform: capitalize;
 }
+.house-details-cards:hover {
+  cursor: pointer;
+}
 .cardsContainer {
   display: flex;
   flex-wrap: wrap;
@@ -237,4 +240,16 @@ input[type="submit"]:hover {
 }
 .no-btn{
   height: 30rem;
+}
+.card-delete{
+  /* background-image: url("../../images/deletebtn.png"); */
+  background-repeat: no-repeat;
+  background-size: auto;
+  float: right
+}
+.card-delete:hover{
+  cursor: pointer;;
+}
+.comments{
+  
 }

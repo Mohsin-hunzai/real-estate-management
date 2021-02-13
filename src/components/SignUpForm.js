@@ -22,6 +22,7 @@ function SignUpForm(props) {
       alert("All fields are required to be filled out");
     }
   }
+  
   function handleChange(e) {
     setUser({ ...user, [e.target.id]: e.target.value, id:Math.random().toString(36).substring(7) });
   }
